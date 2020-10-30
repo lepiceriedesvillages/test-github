@@ -146,12 +146,12 @@
     <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139730465-6 container-element" style="">
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1602702586215_6 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1602702586215_6 nav {left: -9999px;}.hamburger-menu_1602702586215_6 nav ul {margin-top: 80px;}.hamburger-menu_1602702586215_6 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1602702586215_6.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1602702586215_6 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1602702586215_6.open .nav-container {}.hamburger-menu_1602702586215_6 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1602702586215_6 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1604012025751_955 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1604012025751_955 nav {left: -9999px;}.hamburger-menu_1604012025751_955 nav ul {margin-top: 80px;}.hamburger-menu_1604012025751_955 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1604012025751_955.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1604012025751_955 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1604012025751_955.open .nav-container {}.hamburger-menu_1604012025751_955 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1604012025751_955 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1602702586215_6.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1602702586215_6 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1602702586215_6.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1602702586215_6.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1602702586215_6 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1602702586215_6.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1604012025751_955.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1604012025751_955 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1604012025751_955.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1604012025751_955.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1604012025751_955 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1604012025751_955.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1602702586215_6 closed">
+<div class="hamburger-menu_1604012025751_955 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -180,26 +180,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1602702586215_6').removeClass('open');
-    $('.hamburger-menu_1602702586215_6').addClass('closed');
+    $('.hamburger-menu_1604012025751_955').removeClass('open');
+    $('.hamburger-menu_1604012025751_955').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1602702586215_6').addClass('open');
-    $('.hamburger-menu_1602702586215_6').removeClass('closed');
+    $('.hamburger-menu_1604012025751_955').addClass('open');
+    $('.hamburger-menu_1604012025751_955').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1602702586215_6').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1604012025751_955').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1602702586215_6 .nav-container').css({
+    $('.hamburger-menu_1604012025751_955 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1602702586215_6 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1604012025751_955 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -209,7 +209,7 @@
 </script>
 </div></div><div data-silex-type="container-element" class="editable-style silex-id-1552773787501-6 container-element hide-on-desktop"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1602703432614-4 nav header hide-on-mobile" title="" style=""><div class="silex-element-content normal"><h2><br></h2><h2><a href="./" class=""><b>Accueil &nbsp;</b></a><b> &nbsp; &nbsp; <a href="la-tourn-e.html" class="">la Tournée</a>&nbsp; &nbsp; &nbsp;&nbsp;</b><a href="products.html" class="page-link-active"> <b>Produits</b></a><b> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; </b><a href="contact.html" class=""><b>                        Contact&nbsp;</b></a></h2>
                     
-                </div></div></div><div data-silex-type="image-element" class="editable-style silex-id-1598991359171-0 image-element" style=""><img src="assets/logo-1.png" class=""></div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1602695159378-10 page-products paged-element website-min-width paged-element-visible" title=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1602695159378-11 page-products paged-element website-width paged-element-visible" title="" style=""></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1602697749004-63" style=""><img src="assets/bulletin%20de%20commande%20sans%20date.png"></div></div><a href="//www.silexlabs.org/" data-silex-type="image-element" class="editable-style image-element silex-id-1602694034853-0" title="" style=""><img class="" src="assets/logo-silexlabs.png">
+                </div></div></div><div data-silex-type="image-element" class="editable-style silex-id-1598991359171-0 image-element" style=""><img src="assets/logo-1.png" class=""></div></div><div data-silex-type="container-element" class="editable-style section-element silex-id-1602695159378-10 page-products paged-element website-min-width paged-element-visible" title="" style=""><div data-silex-type="container-element" class="editable-style container-element silex-id-1602695159378-11 page-products paged-element website-width paged-element-visible" title="" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1604014610733-5" style=""><div class="silex-element-content normal"><h3>il est <a href="http://localhost/dolibarr/document.php?modulepart=ecm&amp;attachment=1&amp;file=bulletin%2Fbulletin+de+commande.pdf" title="bulletin de commande">possible de télécharger ici le bulletin de commande</a></h3><h3><br></h3><h3><br></h3><h3>ou de le recevoir directement dans sa boite mail chaque semaine&nbsp; <br></h3><h3>en s 'inscrivant à la newsletter : </h3></div></div></div></div><a href="//www.silexlabs.org/" data-silex-type="image-element" class="editable-style image-element silex-id-1602694034853-0" title="" style=""><img class="" src="assets/logo-silexlabs.png">
             </a><div data-silex-type="text-element" class="editable-style text-element abel silex-id-1439156720502-27 footer" style="">
                 <div class="silex-element-content">
                     <p style="text-align: center;" class="normal"><span style="color: rgb(255, 255, 255); font-size: small;">Creative Commons template by <a href="http://lexoyo.me">@lexoyo</a></span><span style="color: rgb(255, 255, 255); font-size: small;">&nbsp; &nbsp; - &nbsp; &nbsp;Powered by <a href="http://www.silex.me">Silex</a></span>
